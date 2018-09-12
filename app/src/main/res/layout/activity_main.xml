@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingresa_los_siguientes_datos_para_obtener_tu_curp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"/>
+
+            <EditText
+                android:id="@+id/lastName1"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="@string/primer_apellido"
+                android:inputType="textPersonName"
+                android:labelFor="@+id/lastName1"
+                android:paddingTop="16dp"
+                android:fontFamily="@font/roboto"/>
+
+            <EditText
+                android:id="@+id/lastName2"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="16dp"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/lastName1"
+                android:hint="@string/segundo_apellido"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/roboto"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="16dp"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/lastName2"
+                android:hint="@string/nombre"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/sexoText"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="16dp"
+                android:layout_below="@id/name"/>
+
+            <Spinner
+                android:textSize="15sp"
+                android:id="@+id/spinnerSexo"
+                android:layout_below="@id/sexoText"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:fontFamily="@font/roboto"/>
+
+
+            <EditText
+                android:id="@+id/date"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="16dp"
+                android:inputType="date"
+                android:layout_below="@+id/spinnerSexo"
+                android:hint="@string/fecha_de_nacimiento"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:id="@+id/estado"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/entidadF"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="16dp"
+                android:layout_below="@id/date"/>
+
+            <Spinner
+                android:textSize="15sp"
+                android:id="@+id/spinnerEnt"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/estado"
+                android:paddingTop="16dp"
+                android:fontFamily="@font/roboto"/>
+
+            <Button
+                android:id="@+id/button"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/spinnerEnt"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_button"
+                android:text="@string/guardar"
+                android:textColor="#fff"
+                android:fontFamily="@font/roboto"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

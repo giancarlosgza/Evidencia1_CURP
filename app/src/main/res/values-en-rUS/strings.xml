@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CURP</string>
+    <string name="tus_datos_son">Your data are:</string>
+    <string name="tu_curp_es">Your CURP is:</string>
+    <string name="sexo">Gender:</string>
+    <string name="primer_apellido">Last Name:</string>
+    <string name="segundo_apellido">Second Last Name:</string>
+    <string name="nombre">Name:</string>
+    <string name="masculino">Male</string>
+    <string name="ingresa_los_siguientes_datos_para_obtener_tu_curp">Insert your data to get your CURP</string>
+    <string name="guardar">Save</string>
+    <string name="femenino">Female</string>
+    <string name="fecha_de_nacimiento">Date birth: YYMMDD</string>
+    <string name="entidadF">State</string>
+    <string name="cerrar_sesion">Close session</string>
+
+    <string-array name="arrayGenero">
+        <item name="man">Hombre</item>
+        <item name="woman">Mujer</item>
+    </string-array>
+</resources>
